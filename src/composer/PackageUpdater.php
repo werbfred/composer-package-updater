@@ -34,15 +34,17 @@ class PackageUpdater
     /*************************************************************************************************/
     $io                 = $event->getIO ();
     $composer           = $event->getComposer ();
-    $new_composer       = clone $composer;
-    $root_package       = $new_composer->getPackage ();
+    $root_package       = $composer->getPackage ();
     $root_package_extra = $root_package->getExtra ();
+    $new_composer       = clone $composer;
+    $new_root_package   = clone $root_package;
     $event_package      = null;
 
     /*************************************************************************************************/
     /* We want to execute only the scripts we will tell the event dispatcher to handle               */
     /*************************************************************************************************/
-    $root_package->setScripts ( [] );
+    $new_root_package->setScripts ( [] );
+    $new_composer->setPackage ( $new_root_package );
 
     /*************************************************************************************************/
     /* Do not handle if no acceptable configuration is being provided                                */
