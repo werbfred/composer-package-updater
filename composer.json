@@ -1,8 +1,8 @@
 {
-  "name": "mathias-meyer/composer-package-updater",
+  "name": "werbfred/composer-package-updater",
   "description": "This project provides a way to have scripts be executed on packages when they are being installed, updated and uninstalled.",
   "keywords": [ "PHP", "Composer", "Package" ],
-  "homepage": "https://github.com/mathias-meyer/composer-package-update",
+  "homepage": "https://github.com/werbfred/composer-package-update",
   "type": "library",
   "license": "MIT",
   "minimum-stability": "dev",
@@ -11,13 +11,13 @@
   },
   "autoload": {
     "psr-4": {
-      "ComposerPackageUpdater\\composer\\": "vendor/mathias-meyer/composer-package-updater/src/composer"
+      "ComposerPackageUpdater\\composer\\": "vendor/werbfred/composer-package-updater/src/composer"
     }
   },
   "authors": [
     {
-      "name": "Mathias Meyer-Gramberg",
-      "email": "frozenmatt@gmail.com",
+      "name": "Werbfred",
+      "email": "werbfred@outlook.com",
       "homepage": "",
       "role": "developer"
     }
