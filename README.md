@@ -17,21 +17,21 @@ Each module or theme being responsible to perform its own install/update/uninsta
 Install this project via packagist :
 
 ```
-composer require mathias-meyer/composer-package-update
+composer require werbfred/composer-package-update
 ```
 
 Open the root  __*composer.json*__ file to update it with configuration below:
 
 ### Autoload
 
-Add `"ComposerPackageUpdater\\composer\\": "vendor/mathias-meyer/src/composer"` to `psr-4` in `autoload` section.
+Add `"ComposerPackageUpdater\\composer\\": "vendor/werbfred/src/composer"` to `psr-4` in `autoload` section.
 
 #### Example:
 
 ```
 "autoload": {
    "psr-4": {
-      "ComposerPackageUpdater\\composer\\": "vendor/mathias-meyer/src/composer"
+      "ComposerPackageUpdater\\composer\\": "vendor/werbfred/src/composer"
    }
 }
 ```
