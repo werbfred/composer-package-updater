@@ -17,7 +17,7 @@ Each module or theme being responsible to perform its own install/update/uninsta
 Install this project via packagist :
 
 ```
-composer require werbfred/composer-package-update
+composer require werbfred/composer-package-updater
 ```
 
 Open the root  __*composer.json*__ file to update it with configuration below:
