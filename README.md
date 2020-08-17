@@ -24,14 +24,14 @@ Open the root  __*composer.json*__ file to update it with configuration below:
 
 ### Autoload
 
-Add `"ComposerPackageUpdater\\composer\\": "vendor/werbfred/src/composer"` to `psr-4` in `autoload` section.
+Add `"ComposerPackageUpdater\\composer\\": "vendor/werbfred/composer-package-updater/src/composer"` to `psr-4` in `autoload` section.
 
 #### Example:
 
 ```
 "autoload": {
    "psr-4": {
-      "ComposerPackageUpdater\\composer\\": "vendor/werbfred/src/composer"
+      "ComposerPackageUpdater\\composer\\": "vendor/werbfred/composer-package-updater/src/composer"
    }
 }
 ```
